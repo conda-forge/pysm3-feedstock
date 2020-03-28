@@ -23,6 +23,7 @@ requirements:
     - numba
     - scipy
     - astropy-helpers
+    - setuptools_scm
   run:
     - python >=3.6
     - healpy
