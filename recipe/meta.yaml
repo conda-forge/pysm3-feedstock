@@ -34,7 +34,7 @@ requirements:
 
 test:
   imports:
-    - pysm
+    - pysm3
   requires:
     - pytest
 
