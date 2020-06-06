@@ -1,5 +1,5 @@
 {% set name = "pysm3" %}
-{% set version = "3.2.0" %}
+{% set version = "3.2.1" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 8eea831417812440ecb9b841d9ca90977a2db861ecfc52244159ef2b6f287ec7
+  sha256: 96019b2a064cb065e3cfccf937f86d0c14411d684d6bfadb6a31c8a10b7089df
 
 build:
   number: 0
@@ -18,6 +18,7 @@ requirements:
   host:
     - python >=3.6
     - pip
+    - poetry
     - healpy
     - toml
     - numba
@@ -33,7 +34,7 @@ requirements:
 
 test:
   imports:
-    - pysm
+    - pysm3
   requires:
     - pytest
 
