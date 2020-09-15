@@ -1,5 +1,5 @@
 {% set name = "pysm3" %}
-{% set version = "3.2.2" %}
+{% set version = "3.3.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: d09baac409a285d3f69a82066f249e787adf2daeeed54802357eb01aac409086
+  sha256: de41cc09b23e54b237b6833d6ce5a42d56c189596fa5a47eebddc8194e6e05b4
 
 build:
   number: 0
