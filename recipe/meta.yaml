@@ -37,12 +37,13 @@ test:
     - pysm3
   requires:
     - pytest
+    - pytest-astropy
 
 about:
   home: https://github.com/healpy/pysm
   license: BSD 3-clause
   license_family: MIT
-  license_file: LICENSE
+  license_file: licenses/LICENSE.rst
   summary: Python Sky Model for Microwave and Submm experiments
 
   # The remaining entries in this section are optional, but recommended.
