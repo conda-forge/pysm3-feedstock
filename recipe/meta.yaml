@@ -41,8 +41,8 @@ test:
 
 about:
   home: https://github.com/healpy/pysm
-  license: BSD 3-clause
-  license_family: MIT
+  license: BSD-3-Clause
+  license_family: BSD
   license_file: licenses/LICENSE.rst
   summary: Python Sky Model for Microwave and Submm experiments
 
