@@ -16,21 +16,21 @@ build:
 
 requirements:
   host:
-    - python >=3.6
+    - python >=3.7
     - pip
-    - poetry
     - healpy
     - toml
     - numba
     - scipy
-    - astropy-helpers
     - setuptools_scm
+    - numpy
   run:
-    - python >=3.6
+    - python >=3.7
     - healpy
     - toml
     - numba
     - scipy
+    - numpy
 
 test:
   imports:
@@ -40,7 +40,7 @@ test:
 
 about:
   home: https://github.com/healpy/pysm
-  license: MIT
+  license: BSD 3-clause
   license_family: MIT
   license_file: LICENSE
   summary: Python Sky Model for Microwave and Submm experiments
