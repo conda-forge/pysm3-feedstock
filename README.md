@@ -3,7 +3,7 @@ About pysm3
 
 Home: https://github.com/healpy/pysm
 
-Package license: MIT
+Package license: BSD-3-Clause
 
 Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/pysm3-feedstock/blob/master/LICENSE.txt)
 

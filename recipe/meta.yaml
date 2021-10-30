@@ -1,5 +1,5 @@
 {% set name = "pysm3" %}
-{% set version = "3.3.1" %}
+{% set version = "3.3.2" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: bc47d54b290fb19a510161550754341944bda1d63c30cea2d6aa00c46502957f
+  sha256: 9dc507dfe01f6f1b5722bffe595095163856575080237b746b68a8b9719959df
 
 build:
   number: 0
@@ -43,7 +43,7 @@ about:
   home: https://github.com/healpy/pysm
   license: BSD-3-Clause
   license_family: BSD
-  license_file: licenses/LICENSE.rst
+  license_file: LICENSE.rst
   summary: Python Sky Model for Microwave and Submm experiments
 
   # The remaining entries in this section are optional, but recommended.
