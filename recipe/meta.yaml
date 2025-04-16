@@ -1,5 +1,6 @@
 {% set name = "pysm3" %}
 {% set version = "3.4.0" %}
+{% set python_min = "3.10" %}
 
 package:
   name: {{ name|lower }}
@@ -10,13 +11,13 @@ source:
   sha256: f3ae0f0a5e28295de7718e20ecc86f6b8b49eb4c59229e44e5c6c62a3a905431
 
 build:
-  number: 0
+  number: 1
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv
 
 requirements:
   host:
-    - python >=3.7
+    - python >={{ python_min }}
     - pip
     - healpy
     - toml
@@ -25,7 +26,7 @@ requirements:
     - setuptools_scm
     - numpy
   run:
-    - python >=3.7
+    - python >={{ python_min }}
     - healpy
     - toml
     - numba
@@ -36,6 +37,7 @@ test:
   imports:
     - pysm3
   requires:
+    - python {{ python_min }}
     - pytest
     - pytest-astropy
 
