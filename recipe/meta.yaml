@@ -7,7 +7,7 @@ package:
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
+  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
   sha256: f3ae0f0a5e28295de7718e20ecc86f6b8b49eb4c59229e44e5c6c62a3a905431
 
 build:
@@ -17,13 +17,13 @@ build:
 
 requirements:
   host:
-    - python >={{ python_min }}
+    - python {{ python_min }}
     - pip
+    - hatchling
     - healpy
     - toml
     - numba
     - scipy
-    - setuptools_scm
     - numpy
   run:
     - python >={{ python_min }}
