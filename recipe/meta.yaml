@@ -26,9 +26,11 @@ requirements:
     - numba
     - scipy
     - numpy
+    - h5py
   run:
     - python >={{ python_min }}
     - healpy
+    - h5py
     - toml
     - numba
     - scipy
