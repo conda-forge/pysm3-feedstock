@@ -1,5 +1,5 @@
 {% set name = "pysm3" %}
-{% set version = "3.4.2" %}
+{% set version = "3.4.4" %}
 {% set python_min = "3.10" %}
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 3a892707f1b20c9980ca3295e77fcf22657ef6329cae7b6301f94ff2d562fba7
+  sha256: 44c4aac3d5e0e56edbe9c5b9ab0650ccb325d36c7651db144563d2459f65d456
 
 build:
   number: 0
@@ -19,22 +19,24 @@ requirements:
   host:
     - python {{ python_min }}
     - pip
+    - astropy
     - hatchling
     - hatch-vcs
-    - healpy
-    - toml
-    - numba
-    - scipy
-    - numpy
+    - healpy >=1.16.0
     - h5py
+    - numba
+    - numpy >=1.21
+    - scipy >=1.10,<1.15
+    - toml
   run:
     - python >={{ python_min }}
-    - healpy
+    - astropy
+    - healpy >=1.16.0
     - h5py
-    - toml
     - numba
-    - scipy
-    - numpy
+    - numpy >=1.21
+    - scipy >=1.10,<1.15
+    - toml
 
 test:
   imports:
@@ -45,7 +47,7 @@ test:
     - pytest-astropy
 
 about:
-  home: https://github.com/healpy/pysm
+  home: https://github.com/galsci/pysm
   license: BSD-3-Clause
   license_family: BSD
   license_file: LICENSE
