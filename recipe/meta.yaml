@@ -11,7 +11,7 @@ source:
   sha256: 44c4aac3d5e0e56edbe9c5b9ab0650ccb325d36c7651db144563d2459f65d456
 
 build:
-  number: 0
+  number: 1
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv
 
@@ -19,7 +19,7 @@ requirements:
   host:
     - python {{ python_min }}
     - pip
-    - astropy
+    - astropy-base
     - hatchling
     - hatch-vcs
     - healpy >=1.16.0
@@ -30,7 +30,7 @@ requirements:
     - toml
   run:
     - python >={{ python_min }}
-    - astropy
+    - astropy-base
     - healpy >=1.16.0
     - h5py
     - numba
