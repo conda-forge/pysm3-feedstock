@@ -3,7 +3,7 @@ About pysm3-feedstock
 
 Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/pysm3-feedstock/blob/main/LICENSE.txt)
 
-Home: https://github.com/healpy/pysm
+Home: https://github.com/galsci/pysm
 
 Package license: BSD-3-Clause
 
