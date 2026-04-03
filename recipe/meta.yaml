@@ -19,22 +19,24 @@ requirements:
   host:
     - python {{ python_min }}
     - pip
+    - astropy
     - hatchling
     - hatch-vcs
-    - healpy
-    - toml
-    - numba
-    - scipy
-    - numpy
+    - healpy >=1.16.0
     - h5py
+    - numba
+    - numpy >=1.21
+    - scipy >=1.10,<1.15
+    - toml
   run:
     - python >={{ python_min }}
-    - healpy
+    - astropy
+    - healpy >=1.16.0
     - h5py
-    - toml
     - numba
-    - scipy
-    - numpy
+    - numpy >=1.21
+    - scipy >=1.10,<1.15
+    - toml
 
 test:
   imports:
@@ -45,7 +47,7 @@ test:
     - pytest-astropy
 
 about:
-  home: https://github.com/healpy/pysm
+  home: https://github.com/galsci/pysm
   license: BSD-3-Clause
   license_family: BSD
   license_file: LICENSE
